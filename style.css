@@ -1,0 +1,309 @@
+body{
+    background-color: #0b0b0b;
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/mainbackground.png);
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.Logo{
+    color:white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+span{
+    color: rgb(0, 165, 0);
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 28px;
+}
+nav ul li a{
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: rgb(0, 165, 0);
+    transition: .4s;
+}
+.btn{
+    font-family: sans-serif;
+    background-color: rgb(0, 165, 0);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+}
+.btn:hover{
+    color: rgb(0, 165, 0);
+    background-color: white;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+.main h1:before{
+    content: '';
+    animation: animate infinite 8s;
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 70px;
+}
+@keyframes animate {
+    0%{
+        content: 'Satria Nathan';
+    }
+    20%{
+        content: 'Satoriya Kobayashi';
+    }
+    40%{
+        content: 'サトリヤ・小林';
+    }
+    60%{
+        content: 'ساتريا ناثان';
+    }
+    80%{
+        content: '사토리야 고바야시';
+    }
+    100%{
+        content: 'Sato';
+    }
+}
+h3{
+    color: white;
+    margin: 25px;
+    margin-bottom: 50px;
+}
+h4{
+    color: rgb(0, 165, 0);
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.dwln-btn{
+    font-family: 'Rubik Dirt';
+    background-color: rgb(0, 165, 0);
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: .4s;
+}
+p{
+    color: white;
+}
+h2{
+    color: white;
+}
+h5{
+    color: white;
+}
+.dwln-btn:hover{
+    background-color: white;
+    color: rgb(0, 165, 0);
+    transform: scale(1.4);
+    transition: .4s;
+}
+.about-uwu{
+    width: 100%;
+    padding: 100px 0px;
+}
+.about img{
+    height: auto;
+    width: 430px;
+}
+.about-text{
+    width: 550px;
+}
+.main1{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h2{
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5{
+    color: white;
+    letter-spacing: 13px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.about-text p{
+    color:rgb(0, 255, 0);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+button{
+    background-color: rgb(0, 165, 0);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transform: scale(1);
+    transition: .4s;
+}
+button:hover{
+    background-color:white;
+    color:rgb(0, 165, 0);
+    transform: scale(1.05);
+    transition: .4s;
+}
+.Skills{
+    
+    width: 500px;
+    margin: 60px auto;
+    color:#fff;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(0, 255, 0, 0.25), 0 10px 10px rgba(0, 255, 0, 0.22);
+}
+.Skills h1{
+    text-align: center;
+    font-size: 70px;
+}
+.Skills h3{
+    margin: 5px;
+}
+.skills li{
+    margin: 20px 0;
+    padding: 10px ;
+}
+.Bar{
+    background:#353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(79, 79, 79, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all;
+}
+.Bar:hover{
+    box-shadow: 0 14px rgba(0, 0 ,0, 0.25), 0 10px rgba(0, 0 ,0, 0.22);
+}
+.Bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgb(0, 244, 61)0%, rgb(0, 210, 252)100%);
+}
+.ps{
+    width: 80%;
+    animation: ps 3s;
+}
+.cd{
+    width: 60%;
+    animation: cd 3s;
+}
+.html{
+    width: 45%;
+    animation: html 3s;
+}
+.game{
+    width: 90%;
+    animation: game 3s;
+}
+@keyframes ps{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes cd{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 45%;
+    }
+}
+@keyframes game{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+.Contact{
+    width: 100%;
+    height: 250px;
+    background-color: #353b48;
+    border-top: 3px solid rgb(0, 255, 0);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.Contact p{
+    color:white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.Contact .hire{
+    background-color: rgb(0, 165, 0);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.Contact .hire:hover{
+    background-color: transparent;
+    border: 2px solid rgb(0, 165, 0);
+    cursor: pointer;
+}
+.Contact footer{
+    font-family: Arial;
+    color: white;
+    margin: 25px;
+}
